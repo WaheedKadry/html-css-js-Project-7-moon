@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: system-ui;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+position: fixed;
+width: 95%;
+z-index: 100;
+overflow: hidden;
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+list-style: none;
+}
+header ul li {
+    margin-right: 30px;
+}
+header ul li a {
+    padding: 6px 15px;
+}
+header ul li a:hover,
+.active {
+    background: #fff;
+    color: #200016;
+    border-radius: 20px;
+}
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+justify-content:center;
+align-items: center;
+}
+.main:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+    z-index: 10;
+}
+.main img {
+    position: absolute;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+
+}
+/* #mount7 {
+position: relative;
+    /* height: calc(100vh - 10px); 
+    /* width: 100vh; 
+    left: 0;
+    right: 0;
+} */
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(71px);
+
+}
+.waheed {
+    color: #fff;
+    font-size: 22px;
+    /* text-transform: uppercase; */
+    transform: translateY(-140px);
+    margin: 0 auto;
+   
+}
+
+.content {
+color: #fff;
+padding: 30px;
+z-index: 10;
+background: linear-gradient(#200016, #10001f);
+position: relative;
+
+}
+.content h2 {
+    margin: 20px;
+    font-size: 30px;
+    z-index: 10;
+    background: #200016;
+color: white;
+}
+.content p {
+    z-index: 10;
+    margin: 20px;
+}
